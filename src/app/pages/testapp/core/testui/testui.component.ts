@@ -1,6 +1,6 @@
 /**
  * Created by: Ashwini Agre
- * Date: 19/06/2018
+ * Date: 20/06/2018
  * Organization: Individual	
  */
 import {Component, OnInit} from '@angular/core';
@@ -30,9 +30,6 @@ this.typeBindResponse_1(response);
 });
 }
 typeBindResponse_1(response: any){
-this.testuiModel.fname =; 
-this.testuiModel.lName =; 
-this.testuiModel.type =; 
 this.testuiModel.dep =response.depName; 
 
  } 
