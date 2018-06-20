@@ -1,0 +1,26 @@
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-card [footer]="true" [header]="true" [show]="true" [header-align]="'left'" [footer-align]="'right'">
+            <amexio-header>
+                Vertical Form
+            </amexio-header>
+            <amexio-body>
+                <amexio-text-input [field-label]="'Text Input'" [(ngModel)]="testuioneModel.FirstTextInput" name="testuioneModel.FirstTextInput" [allow-blank]="true" [min-length]="0" [max-length]="20" [has-label]="true">
+                </amexio-text-input>
+                <amexio-email-input [field-label]="'Email Input'" [(ngModel)]="testuioneModel.EmailId" name="testuioneModel.EmailId" [place-holder]="'example@gmail.com'" [allow-blank]="true" [has-label]="true" [icon-feedback]="true">
+                </amexio-email-input>
+                <amexio-checkbox [field-label]="'checkbox'" [(ngModel)]="testuioneModel.CheckBox" name="testuioneModel.CheckBox" [required]="true">
+                </amexio-checkbox>
+                <amexio-text-input [field-label]="'Text Input'" [(ngModel)]="testuioneModel.SecondTextInput" name="testuioneModel.SecondTextInput" [allow-blank]="true" [min-length]="0" [max-length]="20" [has-label]="true">
+                </amexio-text-input>
+
+            </amexio-body>
+
+            <amexio-action>
+                <amexio-button [label]="'Submit'" [type]="'success'" [tooltip]="'Submit'" [size]="'default'" [form-bind]="'SubmitBtn'">
+                </amexio-button>
+
+            </amexio-action>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>
